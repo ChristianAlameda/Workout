@@ -1,0 +1,17 @@
+.preset-list {
+    display: flex;
+    flex-direction: row;
+    /* take up full width */
+    width: 100%;
+}
+
+.preset-list-item {
+    font-size: 1.5em;
+    flex: 1;
+    text-align: center;
+    padding: 2% 1%;
+}
+
+.preset-list-item:hover {
+    background-color: #3030A0;
+}
