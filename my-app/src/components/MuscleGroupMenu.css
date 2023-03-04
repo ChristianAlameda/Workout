@@ -1,0 +1,16 @@
+input {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+
+}
+
+.muscleGroupListItem {
+    font-size: 3rem;
+}
+
+.muscleGroupChecklist {
+    column-count: 3;
+    column-gap: 1rem;
+}
