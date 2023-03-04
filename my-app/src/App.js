@@ -1,6 +1,6 @@
 import './App.css';
-import MuscleGroups from './components/pages/MuscleGroups';
 import StartingInfo from './components/pages/StartingInfo';
+import MuscleGroups from './components/pages/MuscleGroups';
 import SelectExercisesAndCalculate from './components/pages/SelectExercisesAndCalculate.js';
 import Results from './components/pages/Results';
 
@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <div id="page-container">
-        <MuscleGroups/>
         <StartingInfo/>
+        <MuscleGroups/>
         <SelectExercisesAndCalculate/>
         <Results/>
       </div>
