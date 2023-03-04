@@ -1,6 +1,8 @@
+import './Page.css';
+
 function Results() { 
     return (
-        <div>
+        <div className="page">
             <h1>Results</h1>
         </div>
     )

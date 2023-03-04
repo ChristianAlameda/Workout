@@ -1,6 +1,8 @@
+import './Page.css';
+
 function MuscleGroups() {
     return (
-        <div>
+        <div className="page">
             <h1>Muscle Groups</h1>
         </div>
     )

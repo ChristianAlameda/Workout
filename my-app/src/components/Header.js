@@ -1,3 +1,5 @@
+import './Page.css';
+
 function Header() {
     return (
         <div>

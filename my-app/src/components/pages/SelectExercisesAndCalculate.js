@@ -1,6 +1,8 @@
+import './Page.css';
+
 function SelectExercisesAndCalculate() {
     return (
-        <div>
+        <div className="page">
             <h1>Select Exercises And Calculate</h1>
         </div>
     )

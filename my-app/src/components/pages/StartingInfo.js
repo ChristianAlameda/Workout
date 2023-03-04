@@ -1,6 +1,8 @@
+import './Page.css';
+
 function StartingInfo() {
     return (
-        <div>
+        <div className="page">
             <h1>Starting Info</h1>
         </div>
     )
