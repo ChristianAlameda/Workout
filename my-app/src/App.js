@@ -7,10 +7,12 @@ import Results from './components/pages/Results';
 function App() {
   return (
     <div className="App">
-      <MuscleGroups/>
-      <StartingInfo/>
-      <SelectExercisesAndCalculate/>
-      <Results/>
+      <div id="page-container">
+        <MuscleGroups/>
+        <StartingInfo/>
+        <SelectExercisesAndCalculate/>
+        <Results/>
+      </div>
     </div>
   );
 }
