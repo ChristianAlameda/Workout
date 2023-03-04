@@ -1,4 +1,5 @@
 import './Page.css';
+import './MuscleGroups.css'
 
 import PageHeader from '../PageHeader';
 import PresetsMenu from '../PresetsMenu';
@@ -9,7 +10,7 @@ const MuscleGroupList = ["Abs", "Core and Lower Back", "Arms", "Chest", "Legs", 
 
 function MuscleGroups() {
     return (
-        <div className="page">
+        <div className="page musclegroups-page">
             <PageHeader name="2. Target Muscle Groups"/>
             <div className="page-content">
                 <PresetsMenu/>
