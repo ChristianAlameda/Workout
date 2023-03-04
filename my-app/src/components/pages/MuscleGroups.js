@@ -14,7 +14,7 @@ const muscleGroupList = ["Abs", "Core and Lower Back", "Arms", "Chest", "Legs", 
 function MuscleGroups() {
     return (
         <div className="page musclegroups-page">
-            <PageHeader name="Target Muscle Groups"/>
+            <PageHeader name="Which Muscle Groups?"/>
             <div className="page-content">
                 <PresetsMenu presets={presetList}/>
                 <MuscleGroupMenu muscleGroups={muscleGroupList}/>

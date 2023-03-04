@@ -3,7 +3,7 @@ import './Page.css';
 function StartingInfo() {
     return (
         <div className="page">
-            <h1>Starting Info</h1>
+            <h1>Some basics...</h1>
         </div>
     )
 }
