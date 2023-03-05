@@ -8,9 +8,7 @@ def repcountgen(workoutname, defaul_rep = 6,maxweight=80, warmup=3, workingset=3
         warmup (int, optional): How much warmup sets do you need
     """
     def myround(x, base=5):
-       return base * math.floor(x/base)
-
-    
+       return base * math.floor(x/base) 
     
     workout_reps={}
     workout_reps["Workout"] = workoutname
