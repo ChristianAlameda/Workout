@@ -30,3 +30,6 @@ def repcountgen(workoutname, defaul_rep = 6,maxweight=80, warmup=3, workingset=3
 if __name__ == "__main__":
     print(repcountgen("bench press"))
     print(repcountgen("squats", 10, 225, 5))
+    print(repcountgen(input("enter name of workout")))
+    
+    
