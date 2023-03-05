@@ -34,13 +34,27 @@ def generateExercise():
                 exercises.append(exercise)
     
     if exercises:
-        # select a random exercise from the list of exercises
-        exercise = random.choice(exercises)
-        # return the exercise
-        return jsonify(exercise)
+        # return the exercises
+        return jsonify(exercises)
+
     
     # if there are no exercises that the user can do, return an error message
     return jsonify("No exercises found")
+
+# function that gets a list of all possible body parts
+@app.route('/getBodyParts', methods=['GET'])
+def getBodyParts():
+    # create a list of all body parts
+    bodyParts = []
+    # iterate through the list of exercises
+    for exercise in data:
+        # iterate through the body parts of each exercise
+        for bodyPart in data[exercise]:
+            # if the body part is not already in the list of body parts, add it
+            if bodyPart not in bodyParts:
+                bodyParts.append(bodyPart)
+    # return the list of alphabetized body parts
+    return jsonify(sorted(bodyParts))
 
 if __name__ == '__main__':
         app.run(port='5002')
