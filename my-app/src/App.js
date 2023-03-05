@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 import './App.css';
 import StartingInfo from './components/pages/StartingInfo';
 import MuscleGroups from './components/pages/MuscleGroups';
@@ -8,6 +10,13 @@ import Results from './components/pages/Results';
 const exerciseCount = 3;
 
 function App() {
+
+  const [startingInfoComplete, setStartingInfoComplete] = useState(false);
+  const [muscleGroupsComplete, setMuscleGroupsComplete] = useState(false);
+  const [selectExercisesAndCalculateComplete, setSelectExercisesAndCalculateComplete] = useState(false);
+
+  let informationComplete = startingInfoComplete && muscleGroupsComplete && selectExercisesAndCalculateComplete;
+
   return (
     <div className="App">
       <div id="page-container">
