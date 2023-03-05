@@ -17,11 +17,15 @@ function App() {
 
   let informationComplete = startingInfoComplete && muscleGroupsComplete && selectExercisesAndCalculateComplete;
 
+  function onMuscleGroupsSelected(muscleGroup) {
+    console.log(muscleGroup);
+  }
+
   return (
     <div className="App">
       <div id="page-container">
         <StartingInfo/>
-        <MuscleGroups/>
+        <MuscleGroups onMuscleGroupsSelected={onMuscleGroupsSelected}/>
         <SelectExercisesAndCalculate exercises={["pull-ups", "sit-ups", "deadlift", "squats"]} exerciseCount={exerciseCount}/>
         <Results/>
       </div>
