@@ -6,4 +6,6 @@ from .models import Workouts
 
 class WorkoutView(viewsets.ModelViewSet):
     serializer_class = WorkoutSerializer
-    queryset = Workouts.objects.all()
+    bench = Workouts(title='crunch')
+    print(bench)
+    queryset = Workouts.objects.filter(title='Crunch')
