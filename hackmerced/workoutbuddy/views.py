@@ -4,6 +4,6 @@ from .serializers import WorkoutSerializer
 from .models import Workouts
 # Create your views here.
 
-class TodoView(viewsets.ModelViewSet):
+class WorkoutView(viewsets.ModelViewSet):
     serializer_class = WorkoutSerializer
     queryset = Workouts.objects.all()

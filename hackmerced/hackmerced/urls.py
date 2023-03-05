@@ -19,10 +19,10 @@ from rest_framework import routers
 from workoutbuddy import views
 
 router = routers.DefaultRouter()
-router.register(r'todos', views.TodoView, 'todo')
+router.register(r'workoutbuddy', views.WorkoutView, 'workoutbuddy')
 
 urlpatterns = [
-    path('workoutbuddy/', include('workoutbuddy.urls')),
+    # path('workoutbuddy/', include('workoutbuddy.urls')),
     path('api/', include(router.urls)),
     path('admin/', admin.site.urls),
     ]
