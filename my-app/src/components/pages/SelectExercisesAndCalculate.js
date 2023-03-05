@@ -8,11 +8,11 @@ function SelectExercisesAndCalculate(props) {
         let prompts = [];
         for (let i = 0; i < exerciseCount; i++) {
             prompts.push(
-                <div className="exercise-prompt">
+                <div className="exercise-prompt" key={"exercise-prompt" + i}>
                     <p>Exercise {i+1}</p>
                     <select>
                         {exercises.map((exercise) => {
-                            return <option value={exercise}>{exercise}</option>
+                            return <option value={exercise} key={exercise}>{exercise}</option>
                         })}
                     </select>
                     <input type="number" placeholder="Warmup Sets"></input>
